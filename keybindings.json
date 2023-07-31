@@ -1,0 +1,83 @@
+[
+{
+    "key": "ctrl+shift+\\",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+},
+
+
+{
+    "key" : "alt+right",
+    "command" : "cursorEnd"
+},
+{
+    "key" : "alt+left",
+    "command" : "cursorHome"
+},
+
+
+{
+    "key": "alt+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "alt+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+
+
+{
+    "key": "ctrl+shift+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+},
+
+
+{
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+
+
+{
+    "key": "ctrl+z",
+    "command": "undo"
+},
+{
+    "key": "ctrl+shift+z",
+    "command": "redo"
+},
+
+
+{
+    "key": "ctrl+.",
+    "command": "type",
+    "args": { "text": ">>" },
+    "when": "editorTextFocus && resourceLangId == cpp"
+},
+{
+    "key": "ctrl+,",
+    "command": "type",
+    "args": { "text": "<<" },
+    "when": "editorTextFocus && resourceLangId == cpp"
+},
+{
+    "key": "ctrl+;",
+    "command": "type",
+    "args": { "text": "::" },
+    "when": "editorTextFocus && resourceLangId == cpp"
+}
+]
