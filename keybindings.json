@@ -79,5 +79,66 @@
     "command": "type",
     "args": { "text": "::" },
     "when": "editorTextFocus && resourceLangId == cpp"
+},
+
+
+{
+    "key": "oem_102",
+    "command": "type",
+    "args": { "text": "" }
+},
+
+
+{
+    "key": "oem_102 ,",
+    "command": "cursorLineStart",
+    "args": { "text": "" }
+},
+{
+    "key": "oem_102 .",
+    "command": "cursorEnd",
+    "args": { "text": "" }
+},
+
+
+{
+    "key": "oem_102 ;",
+    "command": "type",
+    "args": { "text": "\n" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "oem_102 space",
+    "command": "type",
+    "args": { "text": "\n" },
+    "when": "editorTextFocus"
+},
+
+
+{
+    "key": "oem_102 d",
+    "command": "type",
+    "args": { "text": "{" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "oem_102 f",
+    "command": "type",
+    "args": { "text": "(" },
+    "when": "editorTextFocus"
+},
+
+
+{
+    "key": "oem_102 j",
+    "command": "type",
+    "args": { "text": "(" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "oem_102 k",
+    "command": "type",
+    "args": { "text": "{" },
+    "when": "editorTextFocus"
 }
 ]
