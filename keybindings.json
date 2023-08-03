@@ -1,11 +1,122 @@
 [
+// -- top row
 {
-    "key": "ctrl+shift+\\",
-    "command": "editor.action.jumpToBracket",
+    "key": "ctrl+e",
+    "command": "type",
+    "args": { "text": "'" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+r",
+    "command": "type",
+    "args": { "text": "\"" },
     "when": "editorTextFocus"
 },
 
 
+{
+    "key": "ctrl+u",
+    "command": "type",
+    "args": { "text": "::" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+i",
+    "command": "type",
+    "args": { "text": "<<" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+o",
+    "command": "type",
+    "args": { "text": ">>" },
+    "when": "editorTextFocus"
+},  
+// -- middle row
+{
+    "key": "ctrl+a",
+    "command": "type",
+    "args": { "text": "[" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
+},
+{
+    "key": "ctrl+s",
+    "command": "type",
+    "args": { "text": "<"},
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+d",
+    "command": "type",
+    "args": { "text": "{" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+f",
+    "command": "type",
+    "args": { "text": "(" },
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+g",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+h",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+j",
+    "command": "deleteLeft",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+;",
+    "command": "type",
+    "args": { "text": ":"},
+    "when": "editorTextFocus"
+},
+// -- last row
+{
+    "key": "ctrl+z",
+    "command": "undo"
+},
+{
+    "key": "ctrl+shift+z",
+    "command": "redo"
+},
+{
+    "key": "ctrl+,",
+    "command" : "cursorHome",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+.",
+    "command": "cursorEnd",
+    "when": "editorTextFocus"
+},
+// -- numpad
+{
+    "key": "ctrl+numpad_subtract",
+    "command": "workbench.action.files.save"
+},
+{
+    "key": "ctrl+numpad_multiply",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+},
+{
+    "key": "ctrl+numpad_divide",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+},
+// --
 {
     "key" : "alt+right",
     "command" : "cursorEnd"
@@ -14,8 +125,6 @@
     "key" : "alt+left",
     "command" : "cursorHome"
 },
-
-
 {
     "key": "alt+up",
     "command": "editor.action.moveLinesUpAction",
@@ -26,20 +135,6 @@
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
 },
-
-
-{
-    "key": "ctrl+shift+enter",
-    "command": "editor.action.insertLineBefore",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
-    "key": "ctrl+enter",
-    "command": "editor.action.insertLineAfter",
-    "when": "editorTextFocus && !editorReadonly"
-},
-
-
 {
     "key": "shift+alt+up",
     "command": "editor.action.copyLinesUpAction",
@@ -51,94 +146,26 @@
     "when": "editorTextFocus && !editorReadonly"
 },
 
-
 {
-    "key": "ctrl+z",
-    "command": "undo"
+    "key": "ctrl+shift+space",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
 },
 {
-    "key": "ctrl+shift+z",
-    "command": "redo"
-},
-
-
-{
-    "key": "ctrl+.",
-    "command": "type",
-    "args": { "text": ">>" },
-    "when": "editorTextFocus && resourceLangId == cpp"
-},
-{
-    "key": "ctrl+,",
-    "command": "type",
-    "args": { "text": "<<" },
-    "when": "editorTextFocus && resourceLangId == cpp"
-},
-{
-    "key": "ctrl+;",
-    "command": "type",
-    "args": { "text": "::" },
-    "when": "editorTextFocus && resourceLangId == cpp"
-},
-
-
-{
-    "key": "oem_102",
-    "command": "type",
-    "args": { "text": "" }
-},
-
-
-{
-    "key": "oem_102 ,",
-    "command": "cursorLineStart",
-    "args": { "text": "" }
-},
-{
-    "key": "oem_102 .",
-    "command": "cursorEnd",
-    "args": { "text": "" }
-},
-
-
-{
-    "key": "oem_102 ;",
-    "command": "type",
-    "args": { "text": "\n" },
-    "when": "editorTextFocus"
-},
-{
-    "key": "oem_102 space",
+    "key": "ctrl+space",
     "command": "type",
     "args": { "text": "\n" },
     "when": "editorTextFocus"
 },
 
-
 {
-    "key": "oem_102 d",
-    "command": "type",
-    "args": { "text": "{" },
-    "when": "editorTextFocus"
+    "key": "ctrl+shift+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
 },
 {
-    "key": "oem_102 f",
-    "command": "type",
-    "args": { "text": "(" },
-    "when": "editorTextFocus"
-},
-
-
-{
-    "key": "oem_102 j",
-    "command": "type",
-    "args": { "text": "(" },
-    "when": "editorTextFocus"
-},
-{
-    "key": "oem_102 k",
-    "command": "type",
-    "args": { "text": "{" },
-    "when": "editorTextFocus"
+    "key": "ctrl+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
 }
 ]
