@@ -167,5 +167,26 @@
     "key": "ctrl+enter",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
+},
+// -- Arrow keys
+{
+    "key": "alt+i",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+},
+{
+    "key": "alt+k",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+},
+{
+    "key": "alt+j",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+},
+{
+    "key": "alt+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
 }
 ]
