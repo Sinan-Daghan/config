@@ -188,5 +188,46 @@
     "key": "alt+l",
     "command": "cursorRight",
     "when": "textInputFocus"
+},
+// -- GitHub Copilot
+{
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+},
+{
+    "key": "ctrl+n",
+    "command": "editor.action.inlineSuggest.acceptNextLine"
+},
+{
+    "key": "alt+n",
+    "command": "editor.action.inlineSuggest.trigger"
+},
+
+
+{
+    "key": "ctrl+numpad0",
+    "command": "-workbench.action.zoomReset"
+},
+{
+    "key": "ctrl+numpad0",
+    "command": "github.copilot.generate"
+},
+{
+    "key": "ctrl+numpad3",
+    "command": "github.copilot.nextPanelSolution"
+},
+{
+    "key": "ctrl+numpad2",
+    "command": "github.copilot.acceptCursorPanelSolution"
+},
+{
+    "key": "ctrl+numpad1",
+    "command": "github.copilot.previousPanelSolution"
+},
+
+{
+    "key": "ctrl+right",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
 }
 ]
