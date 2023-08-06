@@ -1,0 +1,15 @@
+{
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.guides.highlightActiveBracketPair": false,
+    
+    "window.zoomLevel": 1,
+    "editor.fontSize": 10,
+    
+    "editor.renderWhitespace": "all",
+    
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorWidth": 1
+}
