@@ -11,5 +11,18 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "block-outline",
     "editor.cursorBlinking": "solid",
-    "editor.cursorWidth": 1
+    "editor.cursorWidth": 1,
+
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "keyword.control.conditional.js"
+                ],
+                "settings": {
+                    "foreground": "#19ff81"
+                }
+            }
+        ]
+}
 }
