@@ -17,12 +17,21 @@
         "textMateRules": [
             {
                 "scope": [
-                    "keyword.control.conditional.js"
+                    "keyword.control.conditional.js",
+                    "keyword.control.loop.js"
                 ],
                 "settings": {
                     "foreground": "#19ff81"
                 }
+            },
+            {
+                "scope": [
+                    "storage.type.class.js"
+                ],
+                "settings": {
+                    "foreground": "#ffe675"
+                }
             }
         ]
-}
+    }
 }
