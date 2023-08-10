@@ -268,5 +268,43 @@
 {
   "key": "ctrl+pagedown",
   "command": "workbench.action.nextEditor"
+},
+{
+    "key": "ctrl+f9",
+    "command": "editor.action.toggleWordWrap"
+},
+{
+    "key": "f9",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && editorTextFocus"
+},
+{
+    "key": "alt+f10",
+    "command": "keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+},
+{
+    "key": "alt+f",
+    "command": "editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "alt+d",
+    "command": "workbench.action.gotoSymbol"
+},
+// -- Breadcrumbs
+{
+    "key": "ctrl+numpad7",
+    "command": "breadcrumbs.toggle"
+},
+{
+    "key": "ctrl+shift+;",
+    "command": "breadcrumbs.focus",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+},
+{
+    "key": "alt+s",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
 }
 ]
