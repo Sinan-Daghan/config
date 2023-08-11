@@ -31,7 +31,7 @@
     "command": "type",
     "args": { "text": ">>" },
     "when": "editorTextFocus"
-},  
+},
 // -- middle row
 {
     "key": "ctrl+a",
@@ -63,8 +63,14 @@
 },
 {
     "key": "ctrl+g",
-    "command": "editor.action.jumpToBracket",
+    "command": "type",
+    "args": { "text": "/" },
     "when": "editorTextFocus"
+},
+{
+    "key": "alt+g",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
 },
 {
     "key": "ctrl+h",
@@ -261,6 +267,7 @@
     "key": "ctrl+numpad9",
     "command": "editor.action.selectAll"
 },
+// -- Tabs
 {
   "key": "ctrl+pageup",
   "command": "workbench.action.previousEditor"
@@ -269,6 +276,27 @@
   "key": "ctrl+pagedown",
   "command": "workbench.action.nextEditor"
 },
+{
+    "key": "ctrl+1",
+    "command": "workbench.action.focusFirstEditorGroup"
+},
+{
+    "key": "ctrl+2",
+    "command": "workbench.action.focusSecondEditorGroup"
+},
+{
+    "key": "ctrl+3",
+    "command": "workbench.action.focusThirdEditorGroup"
+},
+{
+    "key": "ctrl+\\",
+    "command": "workbench.action.splitEditor"
+},
+{
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
+},
+//--
 {
     "key": "ctrl+f9",
     "command": "editor.action.toggleWordWrap"
@@ -306,5 +334,10 @@
     "key": "alt+s",
     "command": "breadcrumbs.focusAndSelect",
     "when": "breadcrumbsPossible && breadcrumbsVisible"
+},
+{
+    "key": "ctrl+'",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
 }
 ]
