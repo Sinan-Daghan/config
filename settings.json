@@ -33,5 +33,15 @@
                 }
             }
         ]
-    }
+    },
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    
+    "editor.minimap.scale": 1,
+    "editor.minimap.maxColumn": 150,
+    "editor.minimap.side": "left",
+    "editor.minimap.autohide": true,
+    "editor.minimap.renderCharacters": false,
+    //highlight the current section in the minimap
+    "editor.minimap.showSlider": "always"
 }
