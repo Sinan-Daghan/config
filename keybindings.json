@@ -207,6 +207,19 @@
     "command": "cursorRight",
     "when": "textInputFocus"
 },
+// -- Git
+{
+    "key": "shift+`",
+    "command": "git.unstageAll"
+},
+{
+    "key": "shift+2",
+    "command": "git.commit"
+},
+{
+    "key": "shift+3",
+    "command": "git.commitMessageAccept"
+},
 // -- GitHub Copilot
 {
     "key": "ctrl+n",
