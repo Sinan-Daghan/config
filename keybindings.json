@@ -352,5 +352,34 @@
     "key": "ctrl+'",
     "command": "editor.action.jumpToBracket",
     "when": "editorTextFocus"
+},
+// -- Files
+{
+    "key": "shift+f1",
+    "command": "revealFileInOS"
+},
+{
+    "key": "shift+f2",
+    "command": "copyFilePath",
+    "when": "editorFocus"
+},
+{
+    "key": "shift+f3",
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+},
+{
+    "key": "shift+f5",
+    "command": "workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+},
+{
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
 }
 ]
