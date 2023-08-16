@@ -68,7 +68,7 @@
     "when": "editorTextFocus"
 },
 {
-    "key": "alt+g",
+    "key": "alt+f",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
 },
@@ -325,7 +325,7 @@
     "when": "inKeybindings && inKeybindingsSearch"
 },
 {
-    "key": "alt+f",
+    "key": "alt+g",
     "command": "editor.action.formatSelection",
     "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
 },
@@ -370,6 +370,10 @@
 },
 {
     "key": "shift+f5",
+    "command": "git.openChange"
+},
+{
+    "key": "shift+f6",
     "command": "workbench.action.toggleSidebarVisibility"
 },
 {
