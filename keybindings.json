@@ -311,6 +311,11 @@
 },
 //--
 {
+    "key": "ctrl+space",
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineSuggestionVisible"
+},
+{
     "key": "ctrl+f9",
     "command": "editor.action.toggleWordWrap"
 },
@@ -406,5 +411,20 @@
 {
     "key": "ctrl+shift+f9",
     "command": "workbench.action.togglePanel"
+},
+// -- Color Picker
+{
+    "key": "alt+a",
+    "command": "editor.action.showOrFocusStandaloneColorPicker"
+},
+{
+    "key": "a",
+    "command": "editor.action.hideColorPicker",
+    "when": "standaloneColorPickerVisible"
+},
+{
+    "key": "space",
+    "command": "editor.action.insertColorWithStandaloneColorPicker",
+    "when": "standaloneColorPickerFocused"
 }
 ]
