@@ -4,3 +4,8 @@ alias ll='ls -al'
 alias la='ls -A'
 alias ..='cd ..'
 alias ...='cd ../..'
+
+# git section
+alias gs='git status'
+alias ga='git add'
+alias gl='git log'
