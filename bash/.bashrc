@@ -13,3 +13,7 @@ alias gl='git log'
 alias h='history'
 alias c='clear'
 alias n='nano'
+
+alias B='nano ~/.bashrc'
+alias R='source ~/.bashrc'
+alias D='cd ~/Desktop'
