@@ -17,3 +17,6 @@ alias n='nano'
 alias B='nano ~/.bashrc'
 alias R='source ~/.bashrc'
 alias D='cd ~/Desktop'
+
+alias startLAMP='/usr/local/bin/startLAMP.sh'
+alias restartLAMP='/usr/local/bin/restartLAMP.sh'
