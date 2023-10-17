@@ -9,6 +9,7 @@ alias ...='cd ../..'
 alias gs='git status'
 alias ga='git add'
 alias gl='git log'
+alias branch='git branch'
 alias brancha='git branch -a'
 
 alias h='history'
@@ -21,6 +22,7 @@ alias D='cd ~/Desktop'
 
 alias startLAMP='/usr/local/bin/startLAMP.sh'
 alias restartLAMP='/usr/local/bin/restartLAMP.sh'
+alias lamp='cd /var/www/html/'
 
 alias npmi='npm install'
 alias nvmls='nvm ls'
