@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] || [ -z "$1" ]; then
+    echo "Usage: g [character strings to search in history]"
+    exit 1
+fi
+
+cat "$HOME/.bash_history" | grep --color=auto "$1"
