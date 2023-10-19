@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] || [ -z "$1" ]; then
+    echo "Usage: + [source_file.cpp]"
+    exit 1
+fi
+
+source_file="$1"
+executable_file="${source_file%.cpp}"
+
+g++ -o "$executable_file" "$source_file"
+echo "$executable_file" "created"
