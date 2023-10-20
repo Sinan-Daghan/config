@@ -1,3 +1,7 @@
+# Cyan
+export output_color="\e[0;36m"  
+export reset_color="\e[0m"
+
 # a='all' l='long format'
 alias ll='ls -al'
 # A='almost all' do not list implied . and ..
@@ -26,3 +30,5 @@ alias lamp='cd /var/www/html/'
 
 alias npmi='npm install'
 alias nvmls='nvm ls'
+
+echo "bashrc loaded"

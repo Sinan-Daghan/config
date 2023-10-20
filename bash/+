@@ -9,4 +9,4 @@ source_file="$1"
 executable_file="${source_file%.cpp}"
 
 g++ -o "$executable_file" "$source_file"
-echo -e "${output_color} ${executable_file} created${reset_color}"
+echo -e "${output_color}${executable_file} created${reset_color}"
