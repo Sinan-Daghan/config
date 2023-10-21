@@ -11,6 +11,6 @@ if [ -e "$filename" ]; then
     echo "'$filename' already exists."
 else
     touch "$filename"
-    echo "'$filename' created."
+    echo -e "${output_color} ${filename} created.${reset_color}"
     code "$filename"
 fi

@@ -1,3 +1,6 @@
+# Bold Yellow
+export GREP_COLORS='ms=01;33'
+
 # Cyan
 export output_color="\e[0;36m"  
 export reset_color="\e[0m"
