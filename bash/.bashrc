@@ -22,9 +22,11 @@ alias brancha='git branch -a'
 alias h='history'
 alias c='clear'
 alias n='nano'
+alias v="neovim"
 
 alias B='nano ~/.bashrc'
 alias R='source ~/.bashrc'
+alias vimrc="vim ~/.vimrc"
 alias D='cd ~/Desktop'
 
 alias startLAMP='/usr/local/bin/startLAMP.sh'
