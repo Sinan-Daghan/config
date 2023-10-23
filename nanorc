@@ -1,0 +1,7 @@
+bind ^S savefile main
+bind ^W writeout main
+bind ^Q exit all
+bind ^Z undo main
+bind ^Y redo main
+bind ^C copy main
+bind ^V paste all
