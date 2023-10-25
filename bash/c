@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] || [ -z "$1" ]; then
+    echo "Usage: c [command from which the output is copied]"
+    exit 1
+fi
+
+RESULT=$("$@")
+
+echo -n "$RESULT" | xclip -selection clipboard
+
+echo -e "${output_color}${RESULT}${reset_color}"
