@@ -1,0 +1,18 @@
+#!/bin/bash
+
+i=10
+
+while [ $i -ge 0 ]; do
+    echo "$i"
+    
+    read -n 1 -t 1 key
+
+    if [ "$key" == "q" ] || [ "$key" == "Q" ]; then
+        echo -e "\n"
+        exit 0
+    fi
+
+    ((i--))
+done
+
+sudo shutdown -h now
