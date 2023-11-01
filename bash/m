@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: m [directory name]"
+    exit 1
+fi
+
+mkdir $1
+
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+cd $1
+
+echo -e "${output_color}${1} created${reset_color}"
