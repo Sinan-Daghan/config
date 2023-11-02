@@ -11,6 +11,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-cd $1
+cd "$1"
 
 echo -e "${output_color}${1} created${reset_color}"
