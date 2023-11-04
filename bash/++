@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] || [ -z "$1" ]; then
+    echo "Usage: + [source_file.cpp]"
+    exit 1
+fi
+
+source_file="$1"
+executable_file="${source_file%.cpp}"
+
+if ! g++ -o "$executable_file" "$source_file"; then
+    echo -e "${output_color}Compilation failed.${reset_color}"
+    exit 1
+fi
+
+echo -e "${output_color}${executable_file} created${reset_color}"
+./"$executable_file"
